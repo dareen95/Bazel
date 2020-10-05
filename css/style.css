@@ -1,0 +1,414 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+}
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+}
+/*group css selecters with same styles*/
+header .preControl:hover , header .nextControl:hover {
+    background-color: white;
+    color: black;
+}
+header .carousel-inner a:nth-of-type(1):hover ,header .carousel-inner a:nth-of-type(2):hover ,.about .who-we-are:hover a,#prices a,#contact button{
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+header .preControl:focus , header .nextControl:focus-visible ,.btn-outline-light.focus, .btn-outline-light:focus ,#prices a:focus ,#contact button:focus{
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+}
+.about p ,.team p {
+    font-size: 1.5rem;
+}
+/*group css selecters with same styles*/
+
+/* navigation */
+nav{
+    opacity: .9; 
+    font-family: 'Poppins';
+    font-size: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+/* navigation end*/
+
+                                      /* Header Section */
+/*---------------------------------------------------------------------------------------- */
+header .carousel-inner img{
+    height: 100% !important;
+}
+header .carousel-inner h2{
+    font-size:5rem;}
+header .carousel-inner h4{
+    font-size:1.2rem;
+}
+header .carousel-inner a:nth-of-type(2):hover{
+    color:black;
+    background-color: white;
+}
+header .carousel-inner a:nth-of-type(1):hover ,header .carousel-inner a:nth-of-type(2):hover{
+    -webkit-transform: translateY(-.2rem) ;
+        -ms-transform: translateY(-.2rem) ;
+            transform: translateY(-.2rem) ;
+}
+header .preControl{
+bottom: 50%;
+-webkit-transition: background-color ease-in-out 1s ;
+-o-transition: background-color ease-in-out 1s ;
+transition: background-color ease-in-out 1s ;
+}
+header .nextControl{
+bottom: 50%;
+-webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+        transform: translateY(100%);
+-webkit-transition: background-color ease-in-out 1s ;
+-o-transition: background-color ease-in-out 1s ;
+transition: background-color ease-in-out 1s ;
+}
+ 
+                      /* Header section END */
+/*-----------------------------------------------------------------------------------------*/
+                      /*About Section Start*/
+/*------------------------------------------------------------------------------------------*/
+
+.typeEffect {
+    color: #00c3da ;
+    border-right: 3px solid #787878;
+    animation: glowingborder 500ms step-end infinite/* , typeeffect 2s steps(10) alternate infinite  */;
+}
+/* @keyframes typeeffect{
+    0%{width: 0%;}
+    10%{width: 0%;}
+    80%{width: 100%;}
+    100%{widows: 100%;}
+} */
+@keyframes glowingborder{
+    0%{border-color: transparent;}
+    50%{border-color: #787878;}
+    100%{border-color: transparent;}
+} 
+.who-we-are a:hover{
+    color: white;
+    background-color: black;
+}
+                            /*About Section end*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /*Team Section Start*/
+.team h2{
+font-size: 2rem;
+ }
+ .team h2::after{
+     content: 'C';
+     color: black;
+     font-size: 5rem;
+     position: absolute;
+     opacity: .3;
+     left: 50%;
+     bottom: 0%;
+     -webkit-transform: translateX(-50%);
+         -ms-transform: translateX(-50%);
+             transform: translateX(-50%);
+ }          
+ .img-overlay{
+     height: 0;
+     left: 0;
+     bottom: 0;
+     background-color: rgba(0, 195, 218, 0.9);
+     -webkit-transition:1s all ease-in-out;
+     -o-transition:1s all ease-in-out;
+     transition:1s all ease-in-out;
+ }        
+ .img-container:hover .img-overlay{
+     height: 100%;
+     font-weight: ppo;
+ }     
+                            /*Team Section Start*/
+ /*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /*services Section Start*/
+.services{
+    background-color: #1f1f1f;
+    opacity: .7;
+}                           
+.services-characteristics h4{
+    font-size: .8rem;
+}
+.services-characteristics i{
+    color: rgb(0, 173, 159);
+}
+.services-what-we-do h2::after{
+    content: 'W';
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    opacity: .1;
+    left: 0%;
+    bottom: 0%;
+    -webkit-transform: translateX(-15%);
+        -ms-transform: translateX(-15%);
+            transform: translateX(-15%);
+}  
+.services-what-we-do p{
+font-size: 1rem;
+}                          
+                             /*services Section end*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                            /* prices Start */
+.prices{
+    background-color: #f7f7f7;
+}
+.prices h2{
+    font-size: 2rem;
+}
+.prices h2::after{
+    content: 'C';
+    color: black;
+    font-size: 5rem;
+    position: absolute;
+    opacity: .1;
+    left: 50%;
+     bottom: 0%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}   
+.prices .card-body h6{
+    font-size: 3.4rem;
+} 
+.prices .card-body h6::before{
+    content: '$';
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom:100%;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+}
+.best-value {
+    font-size: .7rem;
+    color: white;
+    background-color: #00c3da;
+    right: 0 ;
+    top: 0;
+    -webkit-transform:translateY(-200%);
+        -ms-transform:translateY(-200%);
+            transform:translateY(-200%);
+}
+#prices > div > div > div:nth-child(3) > div > div > h6  {
+    color: #00c3da !important ;
+}
+#prices > div > div > div:nth-child(3) > div > div > h6::before{
+ color:#00c3da ;
+}
+
+#prices a {
+    background-color: #00c3da;
+}
+#prices a:hover ,#contact button:hover{
+    -webkit-transform:translateY(-2px);
+        -ms-transform:translateY(-2px);
+            transform:translateY(-2px);
+}
+                             /* prices End */
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                                /*happy customers  */
+ .happy-customers{
+    background-color: #f7f7f7;
+ }         
+ .happy-customer-card img{
+     width: 15%;
+     left: 50%;
+     top: 0;
+     -webkit-transform: translate(-50%,-50%);
+         -ms-transform: translate(-50%,-50%);
+             transform: translate(-50%,-50%);
+ } 
+ .happy-customer-card h6{
+     color: black;
+     font-size: 2rem;
+ } 
+ .happy-customer-card span{
+    color: #787878;
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif;
+}                     
+                                /* happy customers */
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+                                    /*contact*/
+                                    /*contact map*/
+ #contact > div > div > div:nth-child(1) > div > a {
+     color: #00c3da;
+     font-weight: 900;
+     bottom: 0;
+     left: 0;
+     -webkit-transform: translateY(-25%);
+         -ms-transform: translateY(-25%);
+             transform: translateY(-25%);
+ }                                   
+                                     /*contact map*/
+/*contact form*/
+.contact h2{
+    font-size: 2rem;
+}
+.contact h2::after{
+    content: 'G';
+    color: black;
+    font-size: 5rem;
+    position: absolute;
+    opacity: .1;
+    left: 0%;
+     bottom: 0%;
+    -webkit-transform: translateX(10%);
+        -ms-transform: translateX(10%);
+            transform: translateX(10%);
+} 
+#contact > div > div > div.col-md-6.col-sm-12.contactForm.text-left.py-5 > form > div:nth-child(5) > button{
+    background-color: #00c3da;
+    font-weight: 900;
+}
+.contact form label{
+    color: #1f1f1f;
+    font-size: .9rem;
+    font-family: 'Poppins';
+}
+/*contact form*/
+
+                                    /*contact*/
+
+
+/*Responsive*/
+/*MEDIA QUERY */
+@media all and (max-width:575px){
+    /*media query for Header Content*/
+   
+   
+    /*media query for Header Content*/
+    .contact Form{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .contactForm h2 , .contactForm p{
+       text-align: center !important;
+    }
+    .contactForm h2::after{
+        left: 50%;
+        -webkit-transform: translateX(-150%);
+            -ms-transform: translateX(-150%);
+                transform: translateX(-150%);
+    } 
+}
+@media all and (min-width:576px) and (max-width:767px){
+    header .carousel-inner h2{
+        font-size: 3rem;
+    }
+    header .carousel-inner h4{
+        font-size: 1rem;
+    }
+    .services-what-we-do {
+        text-align: center !important;
+    }
+    .services-what-we-do h2::after{
+        left: 50%;
+        -webkit-transform: translateX(-150%);
+            -ms-transform: translateX(-150%);
+                transform: translateX(-150%);
+    }
+    .contact Form{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .contactForm h2 , .contactForm p{
+       text-align: center !important;
+    }
+    .contactForm h2::after{
+        left: 50%;
+        -webkit-transform: translateX(-150%);
+            -ms-transform: translateX(-150%);
+                transform: translateX(-150%);
+    } 
+}
+@media all and (min-width:768px) and (max-width:992px){
+ header .carousel-inner h2{
+     font-size: 3rem;
+ }
+ header .carousel-inner h4{
+     font-size: 1rem;
+ }
+.services-what-we-do {
+    text-align: center !important;
+}
+.services-what-we-do h2::after{
+    left: 50%;
+    -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+            transform: translateX(-150%);
+} 
+.contact Form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.contactForm h2 , .contactForm p{
+   text-align: center !important;
+}
+.contactForm h2::after{
+    left: 50%;
+    -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+            transform: translateX(-150%);
+} 
+
+}
+@media all and (min-width:993px){
+
+#prices > div > div > div:nth-child(3) > div{
+    -webkit-transform:scale(1.1)  ;
+        -ms-transform:scale(1.1)  ;
+            transform:scale(1.1)  ;
+   }
+#contact > div > div > div:nth-child(1) > div{
+     height: 100% !important;
+  }
+}
+/*Responsive*/
+/*MEDIA QUERY */
